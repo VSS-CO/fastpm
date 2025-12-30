@@ -1,0 +1,60 @@
+# -----------------------------
+# Auto-detect text files and normalize line endings
+# -----------------------------
+* text=auto
+
+# -----------------------------
+# Treat shell scripts and Makefiles as text, enforce LF
+# -----------------------------
+*.sh text eol=lf
+Makefile text eol=lf
+
+# -----------------------------
+# TypeScript / JavaScript
+# -----------------------------
+*.ts text eol=lf
+*.tsx text eol=lf
+*.js text eol=lf
+*.jsx text eol=lf
+*.json text eol=lf
+
+# -----------------------------
+# Go
+# -----------------------------
+*.go text eol=lf
+*.mod text eol=lf
+*.sum text eol=lf
+
+# -----------------------------
+# CSS / HTML / Markdown / Docs
+# -----------------------------
+*.css text eol=lf
+*.html text eol=lf
+*.md text eol=lf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg text eol=lf
+
+# -----------------------------
+# Ignore build artifacts as binary
+# -----------------------------
+/build/* binary
+/dist/* binary
+
+# -----------------------------
+# Executables
+# -----------------------------
+*.exe binary
+*.dll binary
+*.so binary
+*.dylib binary
+
+# -----------------------------
+# Prevent Git from changing line endings on Windows
+# -----------------------------
+*.cmd text eol=crlf
+*.bat text eol=crlf
+*.ps1 text eol=crlf
