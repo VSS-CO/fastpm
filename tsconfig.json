@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                   // Modern JS for Node 14+
+    "module": "CommonJS",                 // Node-compatible module system
+    "outDir": "./dist",                    // Compiled JS output
+    "rootDir": "./",                       // Root folder for TS source
+    "strict": true,                        // Enable all strict type checks
+    "esModuleInterop": true,               // Import npm modules easily
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,                  // Skip type checking for node_modules
+    "resolveJsonModule": true,             // Allow importing JSON lockfiles
+    "moduleResolution": "node",            // Node module resolution strategy
+    "allowJs": true,                        // Allow JS files in the project
+    "noImplicitAny": true,                 // Prevent implicit any
+    "sourceMap": true,                  // Enable sourcemaps for debugging
+    "ignoreDeprecations": "6.0"            // Ignore moduleResolution warnings  
+  },
+  "include": [
+    "cli/**/*.ts",                         // Include all TS files in CLI
+    "src/**/*.ts"                          // Include TS helpers if any
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
